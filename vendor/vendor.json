@@ -1,0 +1,73 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "hP6G+cSerdwSp5+G39NjRb4/f3g=",
+			"path": "github.com/labstack/echo",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "arbpSvi1eBUSuSaEZap+osiG+P8=",
+			"path": "github.com/labstack/echo/context",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "ag5fKA9XYSXX34ysbQrO9OUF6qM=",
+			"path": "github.com/labstack/echo/engine",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "iDCjk9XfJyeiobpsw3E1UXXde/0=",
+			"path": "github.com/labstack/echo/log",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "Yz8nRvgJR9qN9OORCUQKc4eHC7Q=",
+			"path": "github.com/labstack/gommon/color",
+			"revision": "f3b1a1b3bd4726161e1200863d278df7da5e66ff",
+			"revisionTime": "2016-09-25T18:11:33Z"
+		},
+		{
+			"checksumSHA1": "0j6/VhycbbPPqiRKr+2LoYZE5Y4=",
+			"path": "github.com/labstack/gommon/log",
+			"revision": "f3b1a1b3bd4726161e1200863d278df7da5e66ff",
+			"revisionTime": "2016-09-25T18:11:33Z"
+		},
+		{
+			"checksumSHA1": "bGl82/H2WdwCxhmG1+YViHJsWUE=",
+			"path": "github.com/mattn/go-colorable",
+			"revision": "d228849504861217f796da67fae4f6e347643f15",
+			"revisionTime": "2016-11-03T16:00:40Z"
+		},
+		{
+			"checksumSHA1": "Xe1H36zS96+8urk4a0bYdNY3mnw=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "66b8e73f3f5cda9f96b69efd03dd3d7fc4a5cdb8",
+			"revisionTime": "2016-08-06T12:27:52Z"
+		},
+		{
+			"checksumSHA1": "kLYNAx9DYk4W/OuC6dl6W1yLaSk=",
+			"path": "github.com/valyala/fasttemplate",
+			"revision": "3b874956e03f1636d171bda64b130f9135f42cff",
+			"revisionTime": "2016-03-15T19:31:34Z"
+		},
+		{
+			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
+			"path": "golang.org/x/net/context",
+			"revision": "40d3034e575b6eafbca34e64224da61de35ae04c",
+			"revisionTime": "2016-11-01T21:56:08Z"
+		},
+		{
+			"checksumSHA1": "/SO2lR1gexhKSppnoHk8iflTre4=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "eb2c74142fd19a79b3f237334c7384d5167b1b46",
+			"revisionTime": "2016-01-27T01:36:05Z"
+		}
+	],
+	"rootPath": "github.com/go-zero-boilerplate/api-resources"
+}
