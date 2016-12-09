@@ -3,6 +3,36 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "A50uGjK2/E8w+Q7uWyfzHca2jH4=",
+			"path": "github.com/dgrijalva/jwt-go",
+			"revision": "24c63f56522a87ec5339cc3567883f1039378fdb",
+			"revisionTime": "2016-08-31T18:35:34Z"
+		},
+		{
+			"checksumSHA1": "9a7DxIVz8JGI/SvOy+ghzraABoM=",
+			"path": "github.com/francoishill/log",
+			"revision": "f26056923d9ec7895846fee4c8dcc0127b0af482",
+			"revisionTime": "2016-10-15T05:32:57Z"
+		},
+		{
+			"checksumSHA1": "GkOOJlqS9jv9CxKi1zq7nR7VPvs=",
+			"path": "github.com/go-zero-boilerplate/extended-apex-logger/logging",
+			"revision": "714ab495ac258bd77afd03c735021c53af589c7c",
+			"revisionTime": "2016-10-19T17:24:47Z"
+		},
+		{
+			"checksumSHA1": "fRR084FJLRr4/dVbrna6jnywyyE=",
+			"path": "github.com/go-zero-boilerplate/extended-apex-logger/utils/debug",
+			"revision": "714ab495ac258bd77afd03c735021c53af589c7c",
+			"revisionTime": "2016-10-19T17:24:47Z"
+		},
+		{
+			"checksumSHA1": "H6avSIfxAGTv2MdP21Ec/lC5mbg=",
+			"path": "github.com/go-zero-boilerplate/loggers",
+			"revision": "90de37ade85ab5a4c03a122c868635c924cbe088",
+			"revisionTime": "2016-10-15T05:06:27Z"
+		},
+		{
 			"checksumSHA1": "hP6G+cSerdwSp5+G39NjRb4/f3g=",
 			"path": "github.com/labstack/echo",
 			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
@@ -21,10 +51,28 @@
 			"revisionTime": "2016-10-28T04:37:25Z"
 		},
 		{
+			"checksumSHA1": "LW6AaspQoMJfHGdzevCARW/luG4=",
+			"path": "github.com/labstack/echo/engine/standard",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
 			"checksumSHA1": "iDCjk9XfJyeiobpsw3E1UXXde/0=",
 			"path": "github.com/labstack/echo/log",
 			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
 			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "pqBR0Kt1C+LJQIPMr/gATRcqPno=",
+			"path": "github.com/labstack/echo/middleware",
+			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
+			"revisionTime": "2016-10-28T04:37:25Z"
+		},
+		{
+			"checksumSHA1": "8ulgQ4ebz69LsRQlpokdyTzByWE=",
+			"path": "github.com/labstack/gommon/bytes",
+			"revision": "f3b1a1b3bd4726161e1200863d278df7da5e66ff",
+			"revisionTime": "2016-09-25T18:11:33Z"
 		},
 		{
 			"checksumSHA1": "Yz8nRvgJR9qN9OORCUQKc4eHC7Q=",
@@ -35,6 +83,12 @@
 		{
 			"checksumSHA1": "0j6/VhycbbPPqiRKr+2LoYZE5Y4=",
 			"path": "github.com/labstack/gommon/log",
+			"revision": "f3b1a1b3bd4726161e1200863d278df7da5e66ff",
+			"revisionTime": "2016-09-25T18:11:33Z"
+		},
+		{
+			"checksumSHA1": "5VGH6pTjFHuaHYph9/8NznqiGwM=",
+			"path": "github.com/labstack/gommon/random",
 			"revision": "f3b1a1b3bd4726161e1200863d278df7da5e66ff",
 			"revisionTime": "2016-09-25T18:11:33Z"
 		},
