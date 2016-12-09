@@ -4,7 +4,7 @@ package responses
 type Format int
 
 const (
-	_ Format = iota
+	FormatNone Format = iota
 
 	//FormatJSON is the JSON format
 	FormatJSON
