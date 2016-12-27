@@ -39,30 +39,6 @@
 			"revisionTime": "2016-12-26T07:23:05Z"
 		},
 		{
-			"checksumSHA1": "arbpSvi1eBUSuSaEZap+osiG+P8=",
-			"path": "github.com/labstack/echo/context",
-			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
-			"revisionTime": "2016-10-28T04:37:25Z"
-		},
-		{
-			"checksumSHA1": "ag5fKA9XYSXX34ysbQrO9OUF6qM=",
-			"path": "github.com/labstack/echo/engine",
-			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
-			"revisionTime": "2016-10-28T04:37:25Z"
-		},
-		{
-			"checksumSHA1": "LW6AaspQoMJfHGdzevCARW/luG4=",
-			"path": "github.com/labstack/echo/engine/standard",
-			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
-			"revisionTime": "2016-10-28T04:37:25Z"
-		},
-		{
-			"checksumSHA1": "iDCjk9XfJyeiobpsw3E1UXXde/0=",
-			"path": "github.com/labstack/echo/log",
-			"revision": "276394d973b8cdf2569c18ae5dc0edbb5455f8e5",
-			"revisionTime": "2016-10-28T04:37:25Z"
-		},
-		{
 			"checksumSHA1": "uODQk9z4SLrzvdoNf8TyP54M9Xo=",
 			"path": "github.com/labstack/echo/middleware",
 			"revision": "04ed761d414afb5ec688ef9c7394529062f1bedf",
@@ -105,14 +81,38 @@
 			"revisionTime": "2016-11-23T14:36:37Z"
 		},
 		{
+			"checksumSHA1": "5Fp36G8WO0QABGXYfJiGScxd5ho=",
+			"path": "github.com/tylerb/graceful",
+			"revision": "4df1190835320af7076dfcf27b3d071fd3612caf",
+			"revisionTime": "2016-11-17T16:53:25Z"
+		},
+		{
 			"checksumSHA1": "kLYNAx9DYk4W/OuC6dl6W1yLaSk=",
 			"path": "github.com/valyala/fasttemplate",
 			"revision": "3b874956e03f1636d171bda64b130f9135f42cff",
 			"revisionTime": "2016-03-15T19:31:34Z"
 		},
 		{
+			"checksumSHA1": "TK1Yr8BbwionaaAvM+77lwAAx/8=",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "f6b343c37ca80bfa8ea539da67a0b621f84fab1d",
+			"revisionTime": "2016-12-21T04:54:10Z"
+		},
+		{
+			"checksumSHA1": "fvFbUkZIL96D/kWOJwJRMESGjQQ=",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "f6b343c37ca80bfa8ea539da67a0b621f84fab1d",
+			"revisionTime": "2016-12-21T04:54:10Z"
+		},
+		{
 			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
 			"path": "golang.org/x/net/context",
+			"revision": "45e771701b814666a7eb299e6c7a57d0b1799e91",
+			"revisionTime": "2016-12-15T19:42:18Z"
+		},
+		{
+			"checksumSHA1": "WHc3uByvGaMcnSoI21fhzYgbOgg=",
+			"path": "golang.org/x/net/context/ctxhttp",
 			"revision": "45e771701b814666a7eb299e6c7a57d0b1799e91",
 			"revisionTime": "2016-12-15T19:42:18Z"
 		},
