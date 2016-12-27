@@ -5,7 +5,6 @@ import (
 
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
-	"github.com/labstack/echo/engine/standard"
 	"github.com/labstack/echo/middleware"
 
 	"github.com/go-zero-boilerplate/extended-apex-logger/logging"
@@ -32,7 +31,9 @@ type builder struct {
 }
 
 func (b *builder) SetDebugMode(debugMode bool) servers.Builder {
-	b.baseEchoInstance.SetDebug(debugMode)
+	if debugMode {
+		b.baseEchoInstance.Debug = debugMode
+	}
 	return b
 }
 
@@ -91,5 +92,5 @@ func (b *builder) AddJWTAPI(authedAPIOut *apis.API) servers.Builder {
 
 func (b *builder) BuildAndRun(address string) error {
 	b.logger.WithField("address", address).Info("Server listening")
-	return b.baseEchoInstance.Run(standard.New(address))
+	return b.baseEchoInstance.Start(address)
 }

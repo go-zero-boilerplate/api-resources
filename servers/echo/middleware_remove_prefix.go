@@ -10,9 +10,9 @@ func middlewareRemovePrefix(prefix string) echo.MiddlewareFunc {
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) error {
 			req := c.Request()
-			url := req.URL()
-			path := url.Path()
-			qs := url.QueryString()
+			url := req.URL
+			path := url.Path
+			qs := c.QueryString()
 
 			if len(path) > 0 && len(prefix) > 0 && strings.HasPrefix(path, prefix) {
 				path = path[len(prefix):]
@@ -21,9 +21,8 @@ func middlewareRemovePrefix(prefix string) echo.MiddlewareFunc {
 					uri += "?" + qs
 				}
 
-				// Forward
-				req.SetURI(uri)
-				url.SetPath(path)
+				req.RequestURI = uri
+				url.Path = path
 			}
 
 			return next(c)
