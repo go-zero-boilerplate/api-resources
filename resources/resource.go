@@ -9,6 +9,7 @@ import (
 type Resource interface {
 	Get(methodCtx MethodContext, input inputs.Get) responses.Response
 	Post(methodCtx MethodContext, input inputs.Post) responses.Response
+	Patch(methodCtx MethodContext, input inputs.Patch) responses.Response
 	Put(methodCtx MethodContext, input inputs.Put) responses.Response
 	Delete(methodCtx MethodContext, input inputs.Delete) responses.Response
 }

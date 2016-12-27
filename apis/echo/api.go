@@ -59,6 +59,15 @@ func (a *api) AddResource(path string, resource resources.Resource) apis.API {
 		a.middlewares...,
 	)
 
+	a.base.PATCH(
+		path,
+		func(echoCtx echo.Context) error {
+			ctx := a.methodContextFactory.Context(echoCtx, path, resource)
+			return a.resourceResponseToEchoResponse(echoCtx, resource.Patch(ctx, newPatchInput(echoCtx)))
+		},
+		a.middlewares...,
+	)
+
 	a.base.PUT(
 		path,
 		func(echoCtx echo.Context) error {

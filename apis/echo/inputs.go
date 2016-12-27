@@ -10,6 +10,7 @@ import (
 
 func newGetInput(echoCtx echo.Context) inputs.Get       { return &input{echoCtx: echoCtx} }
 func newPostInput(echoCtx echo.Context) inputs.Post     { return &input{echoCtx: echoCtx} }
+func newPatchInput(echoCtx echo.Context) inputs.Patch   { return &input{echoCtx: echoCtx} }
 func newPutInput(echoCtx echo.Context) inputs.Put       { return &input{echoCtx: echoCtx} }
 func newDeleteInput(echoCtx echo.Context) inputs.Delete { return &input{echoCtx: echoCtx} }
 

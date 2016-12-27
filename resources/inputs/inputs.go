@@ -23,6 +23,13 @@ type Post interface {
 	BindBody(body interface{}) error
 }
 
+//Patch is for Resource Patch
+type Patch interface {
+	Query
+	Param
+	BindBody(body interface{}) error
+}
+
 //Put is for Resource PUT
 type Put interface {
 	Query

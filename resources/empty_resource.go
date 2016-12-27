@@ -18,6 +18,11 @@ func (e *EmptyResource) Post(methodCtx MethodContext, input inputs.Post) respons
 	return methodCtx.ResponseBuilderFactory().Builder().MethodNotAllowed()
 }
 
+//Patch returns Status=StatusMethodNotAllowed
+func (e *EmptyResource) Patch(methodCtx MethodContext, input inputs.Patch) responses.Response {
+	return methodCtx.ResponseBuilderFactory().Builder().MethodNotAllowed()
+}
+
 //Put returns Status=StatusMethodNotAllowed
 func (e *EmptyResource) Put(methodCtx MethodContext, input inputs.Put) responses.Response {
 	return methodCtx.ResponseBuilderFactory().Builder().MethodNotAllowed()
