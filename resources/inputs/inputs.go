@@ -10,6 +10,11 @@ type Param interface {
 	Param(key string) Value
 }
 
+//BindBody will bind the input (POST, PUT, PATCH) body to the destination
+type BindBody interface {
+	BindBody(dest interface{}) error
+}
+
 //Get is for Resource GET
 type Get interface {
 	Query
@@ -20,21 +25,21 @@ type Get interface {
 type Post interface {
 	Query
 	Param
-	BindBody(body interface{}) error
+	BindBody
 }
 
 //Patch is for Resource Patch
 type Patch interface {
 	Query
 	Param
-	BindBody(body interface{}) error
+	BindBody
 }
 
 //Put is for Resource PUT
 type Put interface {
 	Query
 	Param
-	BindBody(body interface{}) error
+	BindBody
 }
 
 //Delete is for Resource DELETE
