@@ -221,10 +221,10 @@ var (
 	ErrUnauthorized                = NewHTTPError(http.StatusUnauthorized)
 	ErrMethodNotAllowed            = NewHTTPError(http.StatusMethodNotAllowed)
 	ErrStatusRequestEntityTooLarge = NewHTTPError(http.StatusRequestEntityTooLarge)
-	ErrValidatorNotRegistered      = errors.New("validator not registered")
-	ErrRendererNotRegistered       = errors.New("renderer not registered")
-	ErrInvalidRedirectCode         = errors.New("invalid redirect status code")
-	ErrCookieNotFound              = errors.New("cookie not found")
+	ErrValidatorNotRegistered      = errors.New("Validator not registered")
+	ErrRendererNotRegistered       = errors.New("Renderer not registered")
+	ErrInvalidRedirectCode         = errors.New("Invalid redirect status code")
+	ErrCookieNotFound              = errors.New("Cookie not found")
 )
 
 // Error handlers
@@ -289,9 +289,9 @@ func (e *Echo) DefaultHTTPErrorHandler(err error, c Context) {
 		code = he.Code
 		msg = he.Message
 	} else {
-		msg = err.Error()
+		msg = http.StatusText(code)
 	}
-	if reflect.TypeOf(msg).Kind() != reflect.Ptr {
+	if _, ok := msg.(string); ok {
 		msg = Map{"message": msg}
 	}
 
