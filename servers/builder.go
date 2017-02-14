@@ -12,6 +12,7 @@ type Builder interface {
 	PrefixStripperMiddleware(prefixToStrip string) Builder
 	LoggerMiddleware() Builder
 	RecoverMiddleware() Builder
+	CORSMiddleware(allowOrigins, allowMethods, allowHeaders []string) Builder
 	ResponseDelayMiddleware(responseDelay time.Duration) Builder
 	CreateJWTMiddleware(tokenContextKey, secretKey string) Builder
 	AddAPI(publicAPIOut *apis.API) Builder

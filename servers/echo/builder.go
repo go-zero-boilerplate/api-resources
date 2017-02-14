@@ -56,6 +56,15 @@ func (b *builder) RecoverMiddleware() servers.Builder {
 	return b
 }
 
+func (b *builder) CORSMiddleware(allowOrigins, allowMethods, allowHeaders []string) servers.Builder {
+	b.baseEchoInstance.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+		AllowOrigins: allowOrigins,
+		AllowMethods: allowMethods,
+		AllowHeaders: allowHeaders,
+	}))
+	return b
+}
+
 func (b *builder) ResponseDelayMiddleware(responseDelay time.Duration) servers.Builder {
 	if responseDelay <= 0 {
 		return b
